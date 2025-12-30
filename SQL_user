@@ -1,0 +1,10 @@
+CREATE TABLE user (
+    username VARCHAR(50) NOT NULL PRIMARY KEY,
+    password VARCHAR(60) NOT NULL,
+    role VARCHAR(20) NOT NULL
+);
+
+-- Insertion des comptes par défaut
+INSERT INTO user (username, password, role) VALUES
+('instructor', 'pass_instructor', 'instructor'),
+('student1', 'pass_student1', 'student');
